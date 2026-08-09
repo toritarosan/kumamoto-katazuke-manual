@@ -1,0 +1,741 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="令和8年熊本地震(2026年7月28日発生)で被災した家屋の片づけの手順マニュアル。片づけ前の写真撮影・罹災証明・応急修理・災害ごみ仮置場・ボランティア依頼まで、宇城市(震度7)と八代市(震度6強・断水継続)の事情に合わせて、出典と時点を明記して整理した非公式ページです。">
+<link rel="canonical" href="https://toritarosan.github.io/kumamoto-katazuke-manual/">
+<meta name="theme-color" content="#4A5390">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="被災家屋の片づけマニュアル">
+<meta property="og:title" content="被災家屋の片づけマニュアル｜令和8年熊本地震(宇城市・八代市)">
+<meta property="og:description" content="片づけの前に写真、写真の次に罹災証明。順番を間違えると受けられる支援が減ります。宇城市・八代市の窓口状況(2026-08-09時点)つき非公式マニュアル。">
+<meta property="og:url" content="https://toritarosan.github.io/kumamoto-katazuke-manual/">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary">
+<title>被災家屋の片づけマニュアル｜令和8年熊本地震(宇城市・八代市)</title>
+<style>
+  :root {
+    --bg:#F3F4F8; --surface:#FFFFFF; --surface2:#E9EBF3; --ink:#1A1F2E; --muted:#585F75; --line:#D7DAE6;
+    --accent:#4A5390; --accent-soft:#E7EAF7; --accent-contrast:#FFFFFF;
+    --crit:#B23A2E; --crit-bg:#F9E9E6;
+    --warn:#8A6100; --warn-bg:#F7EDD3;
+    --ok:#1E6F45; --ok-bg:#E2F0E7;
+    --uki:#20549E; --uki-bg:#E3EBF6;
+    --yatsu:#136169; --yatsu-bg:#DCECEC;
+    --shadow:0 1px 3px rgba(26,31,46,.08);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:#12141C; --surface:#1B1E2A; --surface2:#232739; --ink:#E6E8F0; --muted:#9BA2B8; --line:#303650;
+      --accent:#9AA6E8; --accent-soft:#23294A; --accent-contrast:#101425;
+      --crit:#E8887D; --crit-bg:#3A211E;
+      --warn:#E2BB66; --warn-bg:#37301C;
+      --ok:#7CC79A; --ok-bg:#1E3226;
+      --uki:#7FA9E6; --uki-bg:#1F2C3E;
+      --yatsu:#6FBFC4; --yatsu-bg:#1B2E31;
+      --shadow:none;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg:#12141C; --surface:#1B1E2A; --surface2:#232739; --ink:#E6E8F0; --muted:#9BA2B8; --line:#303650;
+    --accent:#9AA6E8; --accent-soft:#23294A; --accent-contrast:#101425;
+    --crit:#E8887D; --crit-bg:#3A211E;
+    --warn:#E2BB66; --warn-bg:#37301C;
+    --ok:#7CC79A; --ok-bg:#1E3226;
+    --uki:#7FA9E6; --uki-bg:#1F2C3E;
+    --yatsu:#6FBFC4; --yatsu-bg:#1B2E31;
+    --shadow:none;
+  }
+  :root[data-theme="light"] {
+    --bg:#F3F4F8; --surface:#FFFFFF; --surface2:#E9EBF3; --ink:#1A1F2E; --muted:#585F75; --line:#D7DAE6;
+    --accent:#4A5390; --accent-soft:#E7EAF7; --accent-contrast:#FFFFFF;
+    --crit:#B23A2E; --crit-bg:#F9E9E6;
+    --warn:#8A6100; --warn-bg:#F7EDD3;
+    --ok:#1E6F45; --ok-bg:#E2F0E7;
+    --uki:#20549E; --uki-bg:#E3EBF6;
+    --yatsu:#136169; --yatsu-bg:#DCECEC;
+    --shadow:0 1px 3px rgba(26,31,46,.08);
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg); color: var(--ink);
+    font-family: "BIZ UDPGothic","Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic UI","Noto Sans JP",Meiryo,sans-serif;
+    line-height: 1.65; margin: 0; font-size: 15px;
+  }
+  .wrap { max-width: 1140px; margin: 0 auto; padding: 20px 16px 64px; }
+  a { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+
+  header.top { border-bottom: 3px solid var(--accent); padding-bottom: 16px; margin-bottom: 16px; }
+  .eyebrow { font-size: 12px; letter-spacing: .12em; color: var(--muted); font-weight: 700; }
+  h1 { font-size: 26px; margin: 4px 0 6px; line-height: 1.3; text-wrap: balance; }
+  .quake-line { font-size: 14px; color: var(--muted); margin: 0 0 10px; }
+  .asof-badge {
+    display: inline-block; background: var(--accent); color: var(--accent-contrast);
+    font-weight: 700; font-size: 13px; padding: 4px 12px; border-radius: 4px;
+  }
+  .top-note { font-size: 13px; color: var(--muted); margin-top: 8px; }
+
+  .disclaimer {
+    background: var(--surface); border: 2px solid var(--warn);
+    border-radius: 8px; padding: 14px 18px; margin: 16px 0 4px;
+  }
+  .disclaimer .dis-lead { margin: 0 0 8px; font-size: 14px; }
+  .disclaimer .dis-lead strong { color: var(--warn); }
+  .disclaimer .dis-author {
+    margin: 10px 0 0; padding-top: 8px; border-top: 1px solid var(--line);
+    font-size: 13.5px; font-weight: 700; color: var(--ink);
+  }
+  .disclaimer .dis-sep { color: var(--muted); font-weight: 400; margin: 0 6px; }
+
+  .alert {
+    background: var(--crit-bg); border-left: 4px solid var(--crit);
+    padding: 10px 14px; border-radius: 0 6px 6px 0; margin: 14px 0; font-size: 14px;
+  }
+  .alert strong { color: var(--crit); }
+
+  nav.jump { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 22px; }
+  nav.jump a {
+    text-decoration: none; font-size: 13px; font-weight: 600;
+    background: var(--surface); border: 1px solid var(--line);
+    padding: 5px 12px; border-radius: 999px; color: var(--ink);
+  }
+  nav.jump a:hover { border-color: var(--accent); color: var(--accent); }
+
+  .rules { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; margin-bottom: 8px; }
+  .rule {
+    background: var(--surface); border: 1px solid var(--line); border-radius: 8px;
+    padding: 12px 14px; box-shadow: var(--shadow);
+  }
+  .rule .num {
+    display: inline-block; background: var(--accent); color: var(--accent-contrast);
+    font-weight: 700; font-size: 14px; width: 26px; height: 26px; line-height: 26px;
+    text-align: center; border-radius: 50%; margin-bottom: 6px;
+  }
+  .rule h3 { font-size: 14.5px; margin: 0 0 4px; line-height: 1.4; }
+  .rule p { font-size: 12.5px; color: var(--muted); margin: 0; }
+
+  section { margin-bottom: 34px; }
+  section > h2 {
+    font-size: 19px; margin: 0 0 4px; padding-top: 8px;
+    border-top: 2px solid var(--line); scroll-margin-top: 12px;
+  }
+  .sec-note { font-size: 13px; color: var(--muted); margin: 0 0 12px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: 12px; }
+  .card {
+    background: var(--surface); border: 1px solid var(--line); border-radius: 8px;
+    padding: 14px 16px; box-shadow: var(--shadow); display: flex; flex-direction: column; gap: 6px;
+  }
+  .card.span2 { grid-column: 1 / -1; }
+  .card h3 { font-size: 15px; margin: 0; line-height: 1.45; }
+  .card p { margin: 0; font-size: 13.5px; }
+  .card ul, .card ol { margin: 0; padding-left: 18px; font-size: 13.5px; }
+  .card li { margin: 2px 0; }
+  .meta { font-size: 13px; color: var(--muted); margin: 0; }
+  .meta b { color: var(--ink); font-weight: 600; }
+  .src { font-size: 12px; color: var(--muted); margin-top: auto; padding-top: 6px; border-top: 1px dashed var(--line); }
+  .src a { color: var(--muted); }
+  .src a:hover { color: var(--accent); }
+
+  .pill {
+    display: inline-block; font-size: 11.5px; font-weight: 700; padding: 1px 9px;
+    border-radius: 999px; vertical-align: 2px; margin-left: 6px; white-space: nowrap;
+  }
+  .p-ok   { background: var(--ok-bg);   color: var(--ok); }
+  .p-warn { background: var(--warn-bg); color: var(--warn); }
+  .p-crit { background: var(--crit-bg); color: var(--crit); }
+  .p-info { background: var(--accent-soft); color: var(--accent); }
+  .p-uki  { background: var(--uki-bg);  color: var(--uki); }
+  .p-yatsu{ background: var(--yatsu-bg);color: var(--yatsu); }
+  .card.c-uki  { border-top: 3px solid var(--uki); }
+  .card.c-yatsu{ border-top: 3px solid var(--yatsu); }
+
+  .tbl-wrap { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; font-size: 13px; }
+  th, td { border: 1px solid var(--line); padding: 6px 10px; text-align: left; vertical-align: top; }
+  th { background: var(--surface2); font-weight: 700; white-space: nowrap; }
+
+  .unconfirmed { background: var(--surface2); border: 1px solid var(--line); border-radius: 8px; padding: 14px 18px; }
+  .unconfirmed h3 { margin: 0 0 6px; font-size: 15px; }
+  .unconfirmed ul { margin: 0; padding-left: 18px; font-size: 13.5px; }
+
+  footer { border-top: 2px solid var(--line); margin-top: 40px; padding-top: 14px; font-size: 12.5px; color: var(--muted); }
+  footer p { margin: 4px 0; }
+
+  @media print {
+    :root { --shadow: none; }
+    body { font-size: 12px; }
+    .card, .rule { break-inside: avoid; }
+    nav.jump { display: none; }
+    a { color: inherit; text-decoration: none; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <div class="eyebrow">令和8年熊本地震（2026年7月28日発生）｜非公式マニュアル</div>
+  <h1>被災家屋の片づけマニュアル<br><span style="font-size:18px;font-weight:600">宇城市・八代市の窓口状況つき</span></h1>
+  <p class="quake-line">2026年7月28日（火）16時27分ごろ発生 ／ <strong>宇城市は震度7・八代市は震度6強</strong> ／ このページは「壊れた家をどう片づけ、どう支援につなげるか」の<b>順番</b>をまとめたものです</p>
+  <span class="asof-badge">窓口情報は 2026年8月9日（日）夜 確認 — 各項目に出典と時点を明記</span>
+  <p class="top-note">仮置場・給水・受付窓口は日ごとに変わります。<b>出かける前に必ず各カードの出典リンク（市公式ページ）で当日の最新情報を確認してください。</b>生活支援情報の全体は姉妹ページ（<a href="https://toritarosan.github.io/uki-shien-dashboard/">宇城市版ダッシュボード</a>／<a href="https://toritarosan.github.io/yatsushiro-shien-dashboard/">八代市版ダッシュボード</a>）にあります。</p>
+</header>
+
+<div class="disclaimer">
+  <p class="dis-lead"><strong>必ず公式の一次情報で確認してください。</strong>災害情報は刻々と変わります。このページは<strong>非公式のまとめ</strong>であり、行動する前に必ず各項目の出典リンク先（宇城市・八代市・熊本県・国などの公式発表）で最新の状況をご確認ください。掲載後に状況が変わっている可能性があります。</p>
+  <p class="dis-lead"><strong>このページはAI（生成AI）を用いて作成しています。</strong>公開情報をAIで収集・整理し、人が確認したうえで公開していますが、誤り・古い情報・抜けが含まれる可能性があります。内容の正確性・最新性は保証できません。判断の根拠には必ず公式情報をお使いください。</p>
+  <p class="dis-author">作成: 小金井市 永鳥太郎<span class="dis-sep">／</span>宇城市・八代市および関係機関の公式な発表ではありません</p>
+</div>
+
+<div class="alert">
+  <strong>片づけは「急がば回れ」です。</strong>被害の写真を撮る前に片づけ・修理・解体をしてしまうと、<b>罹災証明・保険・修理制度で受けられる支援が減るおそれ</b>があります。また、傷んだ建物での作業には余震・落下物・粉じん・熱中症のリスクが伴います。<b>命と体が最優先。焦らず、この順番で。</b>
+</div>
+
+<nav class="jump">
+  <a href="#tessoku">5つの鉄則</a>
+  <a href="#flow">全体の流れ</a>
+  <a href="#step0">STEP0 安全確認</a>
+  <a href="#step1">STEP1 写真</a>
+  <a href="#step2">STEP2 罹災証明</a>
+  <a href="#step3">STEP3 修理・保険・解体</a>
+  <a href="#step4">STEP4 片づけ作業</a>
+  <a href="#step5">STEP5 災害ごみ</a>
+  <a href="#kinshi">してはいけないこと</a>
+  <a href="#akushitsu">悪質商法</a>
+  <a href="#soudan">相談先</a>
+  <a href="#mikakunin">未確認事項</a>
+  <a href="#links">情報源リンク集</a>
+</nav>
+
+<!-- ================================================== -->
+<section id="tessoku">
+  <h2>まず、5つの鉄則</h2>
+  <p class="sec-note">細かいことを忘れても、この5つだけは守ってください。</p>
+  <div class="rules">
+    <div class="rule">
+      <span class="num">1</span>
+      <h3>命と安全が最優先</h3>
+      <p>危険判定（赤・黄）の建物に入らない。余震を感じたらすぐ外へ。屋根に登らない。</p>
+    </div>
+    <div class="rule">
+      <span class="num">2</span>
+      <h3>片づける前に写真</h3>
+      <p>家の外の全景4方向＋被害箇所。罹災証明・保険・修理制度すべての入口になります。</p>
+    </div>
+    <div class="rule">
+      <span class="num">3</span>
+      <h3>罹災証明を申請する</h3>
+      <p>支援金・応急修理・減免など、ほとんどの支援の前提。両市とも受付が動いています。</p>
+    </div>
+    <div class="rule">
+      <span class="num">4</span>
+      <h3>修理・解体は「先に相談」</h3>
+      <p>市の修理制度は<b>工事前の申込・相談が条件</b>。自分で先に業者へ払うと使えません。解体も勝手にしない。</p>
+    </div>
+    <div class="rule">
+      <span class="num">5</span>
+      <h3>ひとりでやらない</h3>
+      <p>両市とも災害ボランティアセンターが片づけの依頼を受けています。無理は禁物。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================== -->
+<section id="flow">
+  <h2>全体の流れ（なぜ順番が大事か）</h2>
+  <div class="grid">
+    <div class="card span2">
+      <div class="tbl-wrap"><table>
+        <tr><th>順番</th><th>やること</th><th>順番を守る理由</th></tr>
+        <tr><td><b>STEP 0</b></td><td>家に入ってよいか安全確認</td><td>倒壊・落下・通電火災・ガス漏れによる二次被害を防ぐため</td></tr>
+        <tr><td><b>STEP 1</b></td><td>被害の写真を撮る（片づけ前）</td><td>片づけ・修理の後では被害を証明できなくなるため</td></tr>
+        <tr><td><b>STEP 2</b></td><td>罹災証明書を申請する</td><td>支援金・応急修理・公費解体・減免など多くの支援の前提になるため</td></tr>
+        <tr><td><b>STEP 3</b></td><td>保険会社へ連絡し、市の修理制度を確認する</td><td>市の修理制度は<b>着工前の申込が条件</b>。先に契約・支払いをすると対象外になるため</td></tr>
+        <tr><td><b>STEP 4</b></td><td>片づけ作業（必要ならボランティア依頼）</td><td>装備と暑さ対策を整えてから。単独作業はけがのもと</td></tr>
+        <tr><td><b>STEP 5</b></td><td>災害ごみを分別して仮置場へ</td><td>分別しないと受け入れてもらえず、処理全体も遅れるため</td></tr>
+      </table></div>
+      <p class="meta">修理・建て替え・解体の判断は罹災証明の判定（全壊〜準半壊など）で使える制度が変わります。<b>判定が出る前に現状を変えないことが、後悔しない一番の近道です。</b></p>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================== -->
+<section id="step0">
+  <h2>STEP 0｜家に入る前に — 安全確認</h2>
+  <p class="sec-note">片づけたい気持ちより先に、「この家に入って大丈夫か」を確かめてください。</p>
+  <div class="grid">
+    <div class="card">
+      <h3>応急危険度判定のステッカーを確認 <span class="pill p-crit">最重要</span></h3>
+      <p>市の判定士が建物に貼る3色の紙です。</p>
+      <ul>
+        <li><b style="color:var(--crit)">赤「危険」</b>: 立ち入り危険。<b>中に入らない</b></li>
+        <li><b style="color:var(--warn)">黄「要注意」</b>: 立ち入りに十分注意。長時間の作業は避ける</li>
+        <li><b style="color:var(--ok)">緑「調査済」</b>: 使用可能と判定</li>
+      </ul>
+      <p>宇城市では7月29日から2週間程度、日奈久断層沿いなど被害が特に大きいエリアで実施（市内全域ではありません）。判定士は登録証を携帯しています。<b>この判定は二次被害防止のための応急調査で、罹災証明の被害認定とは別物です</b>（緑でも罹災証明は別途申請が必要）。</p>
+      <p class="src">出典: <a href="https://www.city.uki.kumamoto.jp/kurashi/sumai/2607344">宇城市 被災建築物応急危険度判定（8/5更新）</a>／八代市は7/31開始（<a href="https://www.city.yatsushiro.lg.jp/kiji00326840/index.html">八代市 応急危険度判定</a>）</p>
+    </div>
+    <div class="card">
+      <h3>建物に入るときのチェック</h3>
+      <ul>
+        <li>建物が<b>傾いている・基礎が割れている・1階がつぶれ気味</b>なら入らない（ステッカーがまだ無くても）</li>
+        <li>頭上の<b>瓦・ひさし・ベランダ</b>、足元のガラス・釘に注意。ヘルメット・底の厚い靴で</li>
+        <li><b>ブロック塀・石垣</b>には近づかない</li>
+        <li>余震を感じたら作業をやめてすぐ屋外へ。<b>出入口を確保</b>しながら作業する</li>
+        <li>2人以上で行動し、家族に行き先を伝える</li>
+      </ul>
+      <p class="src">一般的な安全上の注意（<a href="https://www.city.uki.kumamoto.jp/kurashi/sumai/2607344">宇城市判定ページ</a>も「倒壊の恐れ等がある建築物には近づかない」ことを呼びかけ）</p>
+    </div>
+    <div class="card">
+      <h3>電気 — 通電火災を防ぐ</h3>
+      <ul>
+        <li>久しぶりに家に入るときは、<b>まずブレーカーが落ちているか確認</b>。電気を入れる前に、倒れた電気ストーブ・傷んだコード・水をかぶった家電がないか見る</li>
+        <li>地震で傷んだ電気製品・配線に通電すると<b>火災（通電火災）</b>の原因になります。不安な家電は使わずコンセントを抜く</li>
+        <li>切れた電線・垂れた電線には絶対に触らない</li>
+      </ul>
+      <p class="src">出典: <a href="https://www.nite.go.jp/data/000153143.pdf">NITE 製品安全センター「通電火災に注意」(PDF)</a> / <a href="https://www.bousai.go.jp/jishin/syuto/denkikasaitaisaku/">内閣府 大規模地震時の電気火災対策</a></p>
+    </div>
+    <div class="card">
+      <h3>ガス — においがしたら火気厳禁</h3>
+      <ul>
+        <li>ガスのにおいがしたら<b>火気・電気スイッチの操作をせず</b>、窓を開けてすぐ連絡</li>
+        <li>プロパン（LP）ガスは容器のバルブを閉めてから作業。転倒・チェーン外れがあれば販売店へ</li>
+        <li>八代市の都市ガス: 九州ガス 八代エリア専用 <a href="tel:0120967791">0120-96-7791</a></li>
+      </ul>
+      <p class="src">出典: <a href="https://www.kyugas.co.jp/r8_kumamoto_info/">九州ガス 令和8年熊本地震情報</a>（連絡先は8/1第10報時点）</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================== -->
+<section id="step1">
+  <h2>STEP 1｜片づける前に「被害の写真」</h2>
+  <p class="sec-note">両市とも「片づけの前に写真を」と公式に呼びかけています。<b>ここを飛ばすと後のすべてが不利になります。</b></p>
+  <div class="grid">
+    <div class="card span2">
+      <h3>撮り方（スマホでOK・多めに撮る）</h3>
+      <ul>
+        <li><b>家の外</b>: 建物の全景を<b>4方向</b>から。屋根・外壁・基礎の被害箇所は近づいて別カット</li>
+        <li><b>家の中</b>: 部屋ごとに全体→被害箇所（壁のひび・傾き・落ちた天井など）の順で</li>
+        <li><b>家財</b>: 壊れた家具・家電も1点ずつ。メジャーや新聞を写し込むと大きさ・日付の証明に役立ちます</li>
+        <li><b>撮影日時がわかる形で保存</b>（スマホの標準カメラなら自動記録されます）。現像は不要</li>
+        <li>迷ったら撮る。<b>枚数が多くて困ることはありません</b></li>
+        <li>修理をする場合は<b>修理前・修理後の両方</b>を撮る（市の緊急修理制度で必要です）</li>
+      </ul>
+      <p class="meta"><b>この写真が入口になる制度:</b> 罹災証明（自己判定方式では必須）／地震保険の請求／市の緊急修理・応急修理／公費解体／農業被害の支援（宇城市農政課は片づけ前の撮影を強く推奨）</p>
+      <p class="src">出典: <a href="https://www.gov-online.go.jp/article/202003/entry-9034.html">政府広報オンライン「住まいが被害を受けたとき 最初にすること」</a> / <a href="https://www.city.uki.kumamoto.jp/kurashi/bosaiinfo/sonota_bousai/2515854">宇城市 罹災証明案内（8/8更新）</a> / <a href="https://www.city.yatsushiro.lg.jp/kiji00326754/index.html">八代市からのお知らせ（7/29・建物全景4方向と室内の撮影を呼びかけ）</a></p>
+    </div>
+    <div class="card">
+      <h3>安全とセットで <span class="pill p-warn">注意</span></h3>
+      <p>撮影のために<b>危険な建物へ入らない・屋根に登らない</b>でください。外からの全景と、安全に入れる範囲だけで構いません。撮れない部分は無理をせず、その状況をメモに残しましょう。</p>
+      <p class="src">出典: <a href="https://www.city.yatsushiro.lg.jp/kiji00326754/index.html">八代市（撮影は安全最優先で）</a></p>
+    </div>
+    <div class="card">
+      <h3>貴重品・思い出の品は「捨てる前にひと呼吸」</h3>
+      <p>通帳・権利証・印鑑・保険証券などの貴重品は片づけの最初に確保を。写真・アルバムなどの思い出の品は、泥や粉じんを払って乾かせば残せることがあります。<b>迷ったものは「捨てる箱」ではなく「保留の箱」へ。</b></p>
+      <p class="src">一般的な片づけの知恵（判断に迷う場合はボランティア・家族と相談を）</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================== -->
+<section id="step2">
+  <h2>STEP 2｜罹災証明書を申請する</h2>
+  <p class="sec-note">罹災証明書は住家の被害程度（全壊〜準半壊に至らない、の6区分）を市が証明する書類で、支援金・応急修理・減免など多くの支援の前提です。<b>両市とも受付が動いています。</b></p>
+  <div class="grid">
+    <div class="card c-uki">
+      <h3>宇城市の受付状況 <span class="pill p-uki">宇城市</span> <span class="pill p-ok">受付中</span></h3>
+      <ul>
+        <li><b>窓口:</b> 本庁新館1階 第2会議室（1日300人）／三角支所2階（30人）／豊野支所2階（60人）。小川総合文化センターラポート・不知火支所は開始日未定</li>
+        <li><b>時間:</b> 9:00〜16:00（当面、土日も対応予定）。<b>整理券は8:30から配布</b>、上限に達した日は受付終了</li>
+        <li><b>オンライン申請も可能</b>（市ページからアクセス）</li>
+        <li><b>持ち物:</b> 身分証明書＋被害状況の写真（できる限り撮影日時がわかるもの・現像不要）。世帯主以外の申請は委任状</li>
+        <li><b>写真の要否:</b> 被害が軽微で明らかに「準半壊に至らない」場合の<b>自己判定方式（現地調査なしで迅速交付）では必須</b>。現地調査を希望する場合は必須ではないものの、提出すると調査がより正確になります</li>
+        <li>住家被害認定調査は<b>本格的に開始</b>しています（8/9時点の市ページ）</li>
+      </ul>
+      <p class="meta"><b>問い合わせ:</b> 税務課資産税係 <a href="tel:0964321487">0964-32-1487</a></p>
+      <p class="src">出典: <a href="https://www.city.uki.kumamoto.jp/kurashi/bosaiinfo/sonota_bousai/2515854">宇城市 罹災証明・罹災届出証明（8/8更新・8/9夜確認）</a></p>
+    </div>
+    <div class="card c-yatsu">
+      <h3>八代市の受付状況 <span class="pill p-yatsu">八代市</span> <span class="pill p-warn">窓口は8/10(月)から</span></h3>
+      <ul>
+        <li><b>オンライン申請:</b> 8月3日13時から受付中（<a href="https://logoform.jp/form/zis6/1724496">申請フォーム</a>）</li>
+        <li><b>窓口申請:</b> <b>8月10日（月）から・開庁日のみ</b>。本庁舎1階 多目的ホール／坂本・千丁・東陽・泉・鏡の各支所／日奈久出張所</li>
+        <li><b>時間:</b> 9:00〜17:00</li>
+        <li><b>持ち物:</b> 申請書（市ページに様式）＋被害状況が確認できる写真（現地調査を行う場合は添付不要のことあり）。代理申請可（本人確認書類の提示必須）</li>
+        <li>窓口・駐車場の混雑が予想されます。<b>現地調査は申請の先着順ではない</b>ので、慌てず余裕をもって</li>
+        <li>住家被害認定調査は<b>8月6日から実施中</b>。立ち会い不要・外観からの調査で、申請順ではなく<b>地区ごと</b>に回ります。一見して全壊の建物は申請前でも調査していますが、<b>証明書の発行には申請が必要</b>です</li>
+      </ul>
+      <p class="meta"><b>問い合わせ:</b> 総合相談窓口 <a href="tel:0965334452">0965-33-4452</a>（平日9:00〜17:00）</p>
+      <p class="src">出典: <a href="https://www.city.yatsushiro.lg.jp/kiji00326836/index.html">八代市 り災証明書の窓口申請（8/7更新）</a> / <a href="https://www.city.yatsushiro.lg.jp/kiji00326868/index.html">八代市 住家被害認定調査（8/7更新）</a></p>
+    </div>
+    <div class="card span2">
+      <h3>よくある混同 — 「応急危険度判定」と「罹災証明」は別物です</h3>
+      <div class="tbl-wrap"><table>
+        <tr><th></th><th>応急危険度判定（赤・黄・緑の紙）</th><th>罹災証明の被害認定調査</th></tr>
+        <tr><td><b>目的</b></td><td>直後の二次被害（倒壊・落下）を防ぐ</td><td>支援制度のために被害程度を証明する</td></tr>
+        <tr><td><b>いつ</b></td><td>発災直後に短期間で実施</td><td>一定期間後に別途実施（申請とセット）</td></tr>
+        <tr><td><b>注意</b></td><td colspan="2"><b>緑（調査済）でも罹災証明は自動では出ません。</b>逆に、赤（危険）だから全壊と認定されるとも限りません。罹災証明は必ず別途申請してください</td></tr>
+      </table></div>
+      <p class="src">出典: <a href="https://www.city.uki.kumamoto.jp/kurashi/sumai/2607344">宇城市 応急危険度判定（「発災後一定期間経過したら罹災証明のための建物被害認定調査に移行」8/5更新）</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================== -->
+<section id="step3">
+  <h2>STEP 3｜修理・保険・解体は「工事の前に」連絡</h2>
+  <p class="sec-note"><b>共通ルール: 自分で先に業者と契約して支払うと、市の制度は使えなくなります。</b>「まず市に相談・申込 → それから工事」の順番を守ってください。</p>
+  <div class="grid">
+    <div class="card c-uki">
+      <h3>宇城市: 緊急修理（ブルーシート設置等・上限56,400円） <span class="pill p-uki">宇城市</span> <span class="pill p-ok">受付中</span></h3>
+      <ul>
+        <li>屋根・外壁・建具などへの<b>ブルーシート設置等の緊急措置</b>。雨漏り・風雨の侵入を防ぐ部分の修理が対象</li>
+        <li><b>対象:</b> 準半壊以上の住家被害を受けた世帯（空き家・物置は対象外）</li>
+        <li><b>上限:</b> 1世帯 56,400円（税込）。超過分は自己負担</li>
+        <li><b>受付:</b> オンラインは8/7から、<b>窓口は8/10（月）から</b></li>
+        <li><b>必要:</b> 被害状況の写真＋修理見積書＋申込書。<b>修理前・修理後の写真が必須</b></li>
+        <li><b style="color:var(--crit)">先に業者へ代金を支払うとこの制度は使えません</b></li>
+      </ul>
+      <p class="src">出典: <a href="https://www.city.uki.kumamoto.jp/kurashi/sumai/2613949">宇城市 住宅の被害拡大を防ぐ緊急修理（8/7更新）</a></p>
+    </div>
+    <div class="card c-yatsu">
+      <h3>八代市: 緊急修理（ブルーシート展張等・上限56,400円） <span class="pill p-yatsu">八代市</span> <span class="pill p-ok">実施中</span></h3>
+      <ul>
+        <li><b>対象:</b> 準半壊以上（相当）の損傷で、雨水の侵入により被害拡大のおそれがある住家。<b>罹災証明がまだなくても写真で対応可</b>（物置・倉庫は対象外）</li>
+        <li><b>上限:</b> 56,400円（資材費・人件費・事務費込み）を<b>市が修理業者へ直接支払い</b></li>
+        <li><b>流れ:</b> 被害写真と工事内容を準備して市へ<b>事前相談</b> → 業者見積 → 申込書等を提出 → 市が業者へ依頼 → 完了後に市が支払い</li>
+        <li><b style="color:var(--crit)">事前相談が必須。すでに支払った分は対象外</b>。原則、市内業者への依頼が推奨されています</li>
+      </ul>
+      <p class="src">出典: <a href="https://www.city.yatsushiro.lg.jp/kiji00326859/index.html">八代市 緊急修理（ブルーシート展張等）（8/7更新）</a></p>
+    </div>
+    <div class="card">
+      <h3>ブルーシート・土のう袋の配布</h3>
+      <ul>
+        <li><b>宇城市:</b> 屋根瓦等が損傷した世帯に1世帯<b>2枚上限</b>。<b>行政区長に連絡</b>→区長がまとめて市に申請→区長経由で配布</li>
+        <li><b>八代市:</b> ブルーシート・土のう袋を配布中（<b>上限3枚</b>・8/9時点の緊急情報）</li>
+      </ul>
+      <p class="src">出典: <a href="https://www.city.uki.kumamoto.jp/toppage/important/2611778">宇城市 ブルーシート配布（8/5更新）</a> / <a href="https://www.city.yatsushiro.lg.jp/kinkyu.html">八代市 緊急情報（8/9 20:37時点）</a></p>
+    </div>
+    <div class="card">
+      <h3>住宅の応急修理（本格・最大757,000円） <span class="pill p-warn">八代市は8月下旬から</span></h3>
+      <ul>
+        <li>屋根・外壁など<b>日常生活に必要な最小限の部分</b>を修理して住み続けられるようにする制度（費用は市から業者へ直接支払い）</li>
+        <li><b>対象:</b> 罹災証明で準半壊以上（全壊は応急修理で居住可能な場合）</li>
+        <li><b>上限:</b> 半壊以上 757,000円／準半壊 367,000円（1世帯）</li>
+        <li><b>八代市:</b> 受付は<b>8月下旬開始予定</b>・必要書類は調整中。<b>施工前の写真が必須</b>。市に相談なく修理を始めると対象外になる可能性</li>
+        <li><b>宇城市:</b> 8/9時点で受付開始の発表を確認できていません（上の緊急修理は受付中）。発表は<a href="https://www.city.uki.kumamoto.jp/toppage/kinkyu/2606699">市の地震総合ページ</a>で</li>
+      </ul>
+      <p class="src">出典: <a href="https://www.city.yatsushiro.lg.jp/kiji00326747/index.html">八代市 住宅の応急修理（8/5更新）</a></p>
+    </div>
+    <div class="card">
+      <h3>地震保険・共済に入っていたら早めに連絡</h3>
+      <ul>
+        <li>契約している<b>保険会社・代理店・共済に被害を連絡</b>し、案内に従って写真・書類を準備（STEP1の写真がここでも使えます）</li>
+        <li>保険証券が見つからなくても、本人確認ができれば契約照会は可能です。どの会社か分からない場合は損保協会の<b>自然災害等損保契約照会制度</b>へ</li>
+        <li>保険金の請求で困ったら: そんぽADRセンター（日本損害保険協会）</li>
+      </ul>
+      <p class="src">出典: <a href="https://www.sonpo.or.jp/soudan/uketsuke.html">日本損害保険協会 受付窓口一覧</a> / <a href="https://www.sonpo.or.jp/">日本損害保険協会</a></p>
+    </div>
+    <div class="card span2">
+      <h3>解体を考えている人へ — 「公費解体」の受付発表を待って <span class="pill p-crit">勝手に解体しない</span></h3>
+      <p>大きな災害では、罹災証明で<b>半壊以上</b>と判定された家屋を<b>市が所有者に代わって解体・撤去する「公費解体」</b>の制度が実施されることがあります（環境省の枠組み）。<b>宇城市・八代市とも、今回の地震での公費解体の受付は8月9日時点で発表を確認できていません。</b></p>
+      <p>なお、<b>2026年8月7日の持ち回り閣議</b>で、今回の地震について「激甚災害及びこれに対し適用すべき措置の指定に関する政令」と「特定非常災害及びこれに対し適用すべき措置の指定に関する政令」が決定されています。ただし<b>この指定によって公費解体の受付が自動的に始まるわけではありません</b>。実施の有無・対象・申請方法は、必ず各市の発表で確認してください。</p>
+      <ul>
+        <li><b>自分で先に解体してしまうと、公費解体や被害認定で不利になるおそれがあります。</b>急いで壊す必要がないなら、罹災証明と市の発表を待つのが安全です</li>
+        <li>やむを得ず先に解体する場合も、<b>解体前の写真（全景4方向＋内部）と見積・領収書を必ず保存</b>（過去の災害では自費解体費用の償還が認められた例があります）</li>
+        <li>受付が始まるかどうか・条件は市の発表で確認を（<a href="https://www.city.uki.kumamoto.jp/toppage/kinkyu/2606699">宇城市総合ページ</a>／<a href="https://www.city.yatsushiro.lg.jp/kiji00326750/index.html">八代市関連情報</a>）</li>
+      </ul>
+      <p class="src">出典: <a href="https://policies.env.go.jp/recycle/disaster_waste/archive/r06_shinsai/efforts/pdf/r06_shinsai_info_240221_02.pdf">環境省「公費解体・撤去マニュアル 第2版」(PDF)</a>（制度の一般的な枠組み。今回の適用は両市とも未発表・8/9確認）／<a href="https://www.kantei.go.jp/jp/kakugi/2026/kakugi-2026080701.html">首相官邸「令和8年8月7日（金）持ち回り閣議案件」</a>（政令名を確認・8/9確認）</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================== -->
+<section id="step4">
+  <h2>STEP 4｜片づけ作業 — 体を守りながら</h2>
+  <p class="sec-note">8月の片づけは<b>熱中症・けが・粉じん</b>との闘いです。装備と休憩をけちらないでください。</p>
+  <div class="grid">
+    <div class="card">
+      <h3>服装・装備チェックリスト</h3>
+      <ul>
+        <li>ヘルメット（または帽子）＋タオル</li>
+        <li><b>長袖・長ズボン</b>（肌を出さない）</li>
+        <li><b>防じんマスク</b>（DS2/N95相当。がれき・粉じんの中では布マスクでは不十分）</li>
+        <li>ゴーグル（粉じん・破片から目を守る）</li>
+        <li><b>厚手の手袋</b>（がれきには革手袋、水まわりはゴム手袋）</li>
+        <li>底の厚い靴・安全靴＋<b>踏み抜き防止インソール</b>（釘・ガラス対策）</li>
+        <li>飲み物・塩分・タオル・着替え・モバイルバッテリー</li>
+      </ul>
+      <p class="src">出典: <a href="https://www.saigaivc.com/volunteers/preparation/">全社協 被災地支援・災害ボランティア情報「十分な準備」</a> / <a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000122530.html">厚生労働省「被災地での健康を守るために」</a></p>
+    </div>
+    <div class="card">
+      <h3>熱中症対策 <span class="pill p-crit">8月の最大リスク</span></h3>
+      <ul>
+        <li>作業は<b>朝夕の涼しい時間帯</b>に。日中の炎天下は避ける</li>
+        <li><b>こまめに休憩・水分・塩分</b>。「のどが渇く前に飲む」</li>
+        <li><b>2人以上で作業</b>し、お互いの顔色を見る。めまい・頭痛・吐き気を感じたら即中止して涼しい場所へ</li>
+        <li>断水で入浴・水分補給が限られる中の作業は普段より消耗します。<b>1日でやろうとしない</b></li>
+      </ul>
+      <p class="src">出典: <a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/nettyuu/index.html">厚生労働省 熱中症関連情報</a> / <a href="https://www.wbgt.env.go.jp/">環境省 熱中症予防情報サイト（当日の暑さ指数を確認）</a></p>
+    </div>
+    <div class="card">
+      <h3>けが・破傷風</h3>
+      <ul>
+        <li>がれき・釘・ガラスでの<b>小さな傷から破傷風</b>などに感染するおそれがあります</li>
+        <li>けがをしたら<b>きれいな水でよく洗い</b>、深い傷・さびた釘を踏んだ傷・泥で汚れた傷は<b>医療機関に相談</b>（破傷風ワクチンの追加接種が必要な場合があります）</li>
+        <li>傷のある手で作業しない。絆創膏＋手袋で保護を</li>
+      </ul>
+      <p class="src">出典: <a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000122530.html">厚生労働省「被災地での健康を守るために」</a></p>
+    </div>
+    <div class="card">
+      <h3>粉じん・アスベスト（石綿）</h3>
+      <ul>
+        <li>古い建物のスレート板・吹き付け材・保温材には<b>石綿が含まれている可能性</b>があります</li>
+        <li>壊れた建材は<b>むやみに砕かない・水で湿らせてから静かに扱う</b>・防じんマスクを着用</li>
+        <li>吹き付け材がむき出しの場所には近づかない。<b>石綿含有が疑われる建材の除去は専門業者へ</b></li>
+        <li>スレート・石膏ボードは仮置場で分別品目になっています（STEP5）</li>
+      </ul>
+      <p class="src">出典: <a href="https://www.env.go.jp/air/asbestos/saigaiji_manual.html">環境省「災害時における石綿飛散防止に係る取扱いマニュアル」</a></p>
+    </div>
+    <div class="card c-yatsu">
+      <h3>水が使えない中での片づけ（八代市） <span class="pill p-yatsu">八代市</span> <span class="pill p-crit">断水継続中</span></h3>
+      <ul>
+        <li>八代市は<b>断水が続いています</b>（8/9夜時点。代陽・八代・太田郷・八千把・宮地・郡築・昭和の各校区で試験通水が進行中）</li>
+        <li>応急給水は1回<b>約10リットル</b>（8/10は市内計28か所を予定）。<b>飲用・調理を最優先</b>にし、掃除は「水洗い」ではなく<b>拭き取り中心</b>（ウェットシート・ほうき・ちりとり）で</li>
+        <li>手洗いできない場面に備え、アルコール手指消毒剤・使い捨て手袋を用意</li>
+        <li>給水所の場所・時間は毎日変わります。<b>必ず当日版を確認</b></li>
+        <li>鏡・千丁・東陽・泉町の水道は<b>八代生活環境事務組合</b>の管轄です（市水道局と情報の出し元が違います）</li>
+      </ul>
+      <p class="src">出典: <a href="https://www.city.yatsushiro.lg.jp/kinkyu.html">八代市 緊急情報（8/9 20:37時点）</a> / <a href="https://www.city.yatsushiro.lg.jp/kiji00326773/index.html">八代市 給水所情報</a> / <a href="https://seikatsu.yatsushiro.jp/">八代生活環境事務組合</a></p>
+    </div>
+    <div class="card c-uki">
+      <h3>水が使えない中での片づけ（宇城市） <span class="pill p-uki">宇城市</span> <span class="pill p-warn">一部断水</span></h3>
+      <ul>
+        <li>8/9時点で<b>小川町・豊野町の全域と松橋町の一部が断水</b>、三角町・不知火町などの複数地区で給水制限。市は<b>8月末までの市内全域復旧</b>を目指すとしています</li>
+        <li>応急給水所は8:30〜17:00（市役所・防災拠点センター等。<b>当日の一覧は市ページで確認</b>。三角地区の給水は8/7で終了）</li>
+        <li>断水地域の掃除は拭き取り中心で。飲用水を優先に</li>
+      </ul>
+      <p class="src">出典: <a href="https://www.city.uki.kumamoto.jp/kurashi/sumai/jogesuido/2606682">宇城市 断水及び給水のお知らせ（8/9更新）</a></p>
+    </div>
+    <div class="card span2">
+      <h3>通水が再開したら最初にやること — 宅内漏水チェック</h3>
+      <p>家の中の給水管が地震で傷んでいると、通水再開後に<b>気づかないうちに漏水して水道代がかさむ・家が傷む</b>ことがあります。</p>
+      <ol>
+        <li>家中の蛇口をすべて閉める</li>
+        <li>水道メーターの<b>パイロット（コマ）</b>を見る</li>
+        <li><b>それでも回っていたら宅内漏水の可能性</b> → 止水栓を閉めて、市の指定給水装置工事事業者へ修理を依頼（メーターより家側の修理は所有者負担です）</li>
+      </ol>
+      <p class="src">出典: <a href="https://www.city.yatsushiro.lg.jp/kinkyu.html">八代市 緊急情報（8/9・パイロットの回転による宅内漏水確認を案内）</a> / <a href="https://www.city.uki.kumamoto.jp/kurashi/sumai/jogesuido/2606682">宇城市 断水・給水のお知らせ（8/9更新・メーターのコマによる確認と指定工事業者への依頼を案内）</a></p>
+    </div>
+    <div class="card c-uki">
+      <h3>片づけをボランティアに頼む（宇城市） <span class="pill p-uki">宇城市</span> <span class="pill p-ok">活動本格化</span></h3>
+      <ul>
+        <li>宇城市災害ボランティアセンター（社協運営）は<b>8/6から活動が本格始動</b>。<b>住居内の片づけ、住居・敷地内のがれき撤去等</b>を手伝ってもらえます</li>
+        <li><b>依頼（被災者側）:</b> 8/5から受付中。電話 <a href="tel:08050639672">080-5063-9672</a>／<a href="tel:08050639989">080-5063-9989</a>／<a href="tel:0964321316">0964-32-1316</a>（9:00〜16:00）</li>
+        <li><b>参加（手伝う側）:</b> 熊本県博物館ネットワークセンター多目的広場（松橋町豊福1695）で受付9:00〜10:00／12:30〜13:00。中学生以上・オンライン事前登録推奨</li>
+        <li>依頼は遠慮しないでください。<b>「高齢の親の家」「持病がある」「量が多い」は立派な依頼理由です</b></li>
+      </ul>
+      <p class="src">出典: <a href="https://www.shakyou-uki.jp/oshirase/12239/">宇城市社会福祉協議会 災害ボランティアセンター（8/8更新）</a></p>
+    </div>
+    <div class="card c-yatsu">
+      <h3>片づけをボランティアに頼む（八代市） <span class="pill p-yatsu">八代市</span> <span class="pill p-ok">開設済み</span></h3>
+      <ul>
+        <li>八代市災害ボランティアセンターは<b>鏡総合グラウンド</b>（鏡町両出1430）に設置されています</li>
+        <li><b>依頼（被災者側）:</b> 電話 <a href="tel:08050659461">080-5065-9461</a>／<a href="tel:08050659219">080-5065-9219</a>／<a href="tel:08050669189">080-5066-9189</a>／<a href="tel:08050689506">080-5068-9506</a>（9:00〜16:00）</li>
+        <li><b>対応内容:</b> 家屋内の後片づけ、災害廃棄物の分別・搬出・運搬</li>
+        <li><b>対象外:</b> 空き家・店舗。危険が伴う依頼（屋根作業など）は対応できないことがあります</li>
+        <li><b>参加（手伝う側）:</b> 八代市社会福祉協議会のホームページで受付（<a href="https://www.yatsushiro-shakyo.jp/">八代市社協</a>）</li>
+      </ul>
+      <p class="src">出典: <a href="https://www.city.yatsushiro.lg.jp/kiji00326822/index.html">八代市 災害ボランティアセンター（8/7更新）</a></p>
+    </div>
+    <div class="card">
+      <h3>冷蔵庫・生ごみ — 腐敗物は「災害ごみ」ではありません</h3>
+      <ul>
+        <li>停電で傷んだ食品・生ごみは<b>通常のごみ収集</b>へ。<b>仮置場には持ち込めません</b>（両市とも生ごみ・生活系ごみは受入不可）</li>
+        <li>汁が漏れないよう袋を二重に。収集日まではふた付き容器で保管を</li>
+        <li>冷蔵庫・洗濯機など<b>家電リサイクル4品目</b>は仮置場の分別対象です（STEP5）</li>
+        <li>通常収集の当日の状況は各市のごみ案内ページで確認を</li>
+      </ul>
+      <p class="src">出典: <a href="https://www.city.yatsushiro.lg.jp/kiji00326738/index.html">八代市 もえるごみ収集</a> / <a href="https://www.city.uki.kumamoto.jp/kurashi/kankyo/gomi/2607719">宇城市 災害ごみ仮置き場（8/9更新・生活系ごみ受入不可）</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================== -->
+<section id="step5">
+  <h2>STEP 5｜災害ごみの出し方（仮置場）</h2>
+  <p class="sec-note"><b>分別が命です。</b>分別されていないと受け入れを断られ、地域全体の処理も遅れます。生活ごみ（生ごみ・おむつ等）は絶対に混ぜないでください。</p>
+  <div class="grid">
+    <div class="card c-uki">
+      <h3>宇城市の仮置き場（8/8から4か所体制） <span class="pill p-uki">宇城市</span> <span class="pill p-ok">開設中</span></h3>
+      <ul>
+        <li><b>場所:</b> 三角B&amp;Gグラウンド（<b>8/31で閉鎖</b>）／豊川グラウンド／稲川グラウンド／旧豊野小学校跡地</li>
+        <li><b>期間:</b> 8月8日〜9月30日。<b>土日の開設は8/8・9、8/29・30、9/26・27のみ</b>・祝日は閉設</li>
+        <li><b>時間:</b> 9:30〜11:30／13:00〜15:00</li>
+        <li><b>受入14品目:</b> 廃プラスチック・木くず・可燃系粗大・処理困難物・畳・ガラス陶磁器類・蛍光灯・石膏ボード・スレート板・瓦・がれきコンクリート・金属類・小型家電・リサイクル家電</li>
+        <li><b>受入不可:</b> 生活系ごみ（生ごみ・おむつ等）／市外で発生したごみ／液体／産業廃棄物／解体業者の搬入物／土砂／ガスボンベ・灯油・農薬</li>
+        <li><b>持ち物:</b> 本人確認書類（免許証・マイナンバーカード）。委任状が必要な場合の扱いは市ページで確認を</li>
+      </ul>
+      <p class="meta"><b>問い合わせ:</b> 衛生環境課 <a href="tel:0964321598">0964-32-1598</a></p>
+      <p class="src">出典: <a href="https://www.city.uki.kumamoto.jp/kurashi/kankyo/gomi/2607719">宇城市 災害ごみ仮置き場情報（8/9更新）</a></p>
+    </div>
+    <div class="card c-yatsu">
+      <h3>八代市の仮置場（8/10から2か所体制） <span class="pill p-yatsu">八代市</span> <span class="pill p-ok">開設中</span></h3>
+      <ul>
+        <li><b>①水処理センター西側</b>（新港町3丁目1番地）: 8/3〜12月末・<b>毎週木曜休み</b></li>
+        <li><b>②鏡支所</b>（鏡町内田453番地1）: <b>8/10（月）から</b>・12月末予定・<b>毎週水曜・土曜休み</b></li>
+        <li><b>時間:</b> どちらも9:00〜11:30／13:00〜16:00</li>
+        <li><b>受入14品目:</b> ガラス陶磁器くず・コンクリートがら・瓦・木くず・廃プラスチック・家具類・たたみ・布団類・小型家電・家電リサイクル4品目・金属くず・石膏ボード・スレート・サイディング（<b>品目ごとに分別して搬入</b>）</li>
+        <li><b>受入不可:</b> 生ごみ・生活ごみ・燃えるごみ・<b>個人依頼による解体ごみ</b></li>
+        <li><b>持ち物:</b> 身分証（免許証・マイナンバーカード等）。代理搬入は委任状</li>
+        <li>混雑時は受け入れを早めに打ち切ることがあります。当日の状況は市ページで</li>
+      </ul>
+      <p class="meta"><b>問い合わせ:</b> 市民環境課 <a href="tel:0965334114">0965-33-4114</a></p>
+      <p class="src">出典: <a href="https://www.city.yatsushiro.lg.jp/kiji00324627/index.html">八代市 災害廃棄物仮置場（8/6更新）</a></p>
+    </div>
+    <div class="card">
+      <h3>共通ルール</h3>
+      <ul>
+        <li><b>普段のごみステーションに災害ごみを出さない</b>（収集できず残ります）</li>
+        <li>仮置場に運ぶ前に<b>品目ごとに車へ積み分ける</b>と現地で早い</li>
+        <li>荷下ろしは搬入者自身で行うのが基本。<b>運べない・持ち上げられない場合はボランティアセンターへ依頼</b>（STEP4）</li>
+        <li>ごみの<b>野外焼却（野焼き）は法律で原則禁止</b>です</li>
+      </ul>
+      <p class="src">出典: 各市仮置場ページ（上記）／<a href="https://laws.e-gov.go.jp/law/345AC0000000137">廃棄物処理法 第16条の2（焼却禁止）</a></p>
+    </div>
+    <div class="card c-yatsu">
+      <h3>割れたガラス・食器（八代市） <span class="pill p-yatsu">八代市</span></h3>
+      <p>集積所の容器からあふれたガラス・陶磁器は当日収集できない場合がありますが、<b>後日改めて収集されるので、できるだけそのままの状態で</b>置いておくよう市が案内しています。大量に発生した分は仮置場（水処理センター西側）へ。</p>
+      <p class="src">出典: <a href="https://www.city.yatsushiro.lg.jp/kiji00326844/index.html">八代市 ガラス・陶磁器くず等の収集（8/4更新）</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================== -->
+<section id="kinshi">
+  <h2>してはいけないこと 10か条</h2>
+  <div class="grid">
+    <div class="card span2">
+      <ol>
+        <li><b>赤（危険）・黄（要注意）の建物に入らない</b> — 余震で倒壊するおそれ。持ち出したい物があっても命が先</li>
+        <li><b>写真を撮る前に片づけ・修理・解体をしない</b> — 被害の証明ができなくなります</li>
+        <li><b>市に相談する前に修理業者へ支払わない</b> — 緊急修理・応急修理とも「先払い・事前相談なし」は対象外になります</li>
+        <li><b>勝手に家を解体しない</b> — 公費解体の受付発表（両市とも8/9時点で未発表）を待つ。やむを得ない場合も写真と書類を残す</li>
+        <li><b>屋根に登らない</b> — ブルーシート張りは転落事故が最も多い作業です。市の緊急修理制度（業者施工）やボランティアセンターへの相談を</li>
+        <li><b>単独・夜間・炎天下で作業しない</b> — 2人以上・朝夕・こまめな休憩で</li>
+        <li><b>肌を出した軽装・布マスクだけで作業しない</b> — 粉じん・石綿・釘の踏み抜きから体を守る装備を</li>
+        <li><b>仮置場に生活ごみ・便乗ごみを持ち込まない</b> — 受け入れ拒否や処理の遅れにつながります。ごみの野焼きも禁止</li>
+        <li><b>「無料点検」の訪問業者とその場で契約しない</b> — 下の悪質商法の手口を必ず読んでください</li>
+        <li><b>ひとりで抱え込まない</b> — 片づけはボランティアへ、手続きは総合相談窓口へ。頼ることは恥ではありません</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================== -->
+<section id="akushitsu">
+  <h2>悪質商法・詐欺に注意</h2>
+  <div class="grid">
+    <div class="card span2">
+      <h3>今回の地震でも「点検商法」の注意喚起が出ています <span class="pill p-crit">実際に発生</span></h3>
+      <ul>
+        <li><b>手口の例:</b> 「屋根を無料で点検します」と突然訪問 →「このままでは雨漏りする」と不安をあおって高額契約を迫る／見積もりを頼んだだけなのに勝手にブルーシートを張って高額な作業料を請求する</li>
+        <li><b>対処:</b> その場で契約しない・複数の見積もりを取る・作業前に書面をもらう。<b>訪問販売はクーリング・オフ（原則8日間）の対象</b>です</li>
+        <li>不審に思ったら<b>消費者ホットライン <a href="tel:188">188</a></b>（お近くの消費生活センターにつながります）へ</li>
+        <li>義援金をかたる詐欺・身内を装う送金要求にも注意。<b>寄付は公式に公表された口座へ</b>。怪しい電話・訪問は警察相談 <a href="tel:%239110">#9110</a></li>
+      </ul>
+      <p class="src">出典: <a href="https://www.kokusen.go.jp/soudan_now/data/disaster.html">国民生活センター「ご用心 災害に便乗した悪質商法」</a> / <a href="https://www.ben54.jp/news/3755">弁護士JPニュース（今回の地震に便乗した点検商法への国民生活センターの注意喚起を報道）</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================== -->
+<section id="soudan">
+  <h2>相談先一覧（この手順で使う番号だけ）</h2>
+  <div class="grid">
+    <div class="card span2">
+      <div class="tbl-wrap"><table>
+        <tr><th>用件</th><th>宇城市</th><th>八代市</th></tr>
+        <tr><td><b>何から始めればいいか分からない</b></td><td>市役所代表 <a href="tel:0964321111">0964-32-1111</a>（月〜金8:30〜17:15・各担当へ）</td><td>被災者支援 総合相談窓口 <a href="tel:0965334452">0965-33-4452</a>（平日9:00〜17:00）</td></tr>
+        <tr><td>罹災証明</td><td>税務課資産税係 <a href="tel:0964321487">0964-32-1487</a></td><td>総合相談窓口 <a href="tel:0965334452">0965-33-4452</a>／市役所 <a href="tel:0965334111">0965-33-4111</a></td></tr>
+        <tr><td>片づけの依頼（ボラセン）</td><td><a href="tel:08050639672">080-5063-9672</a>／<a href="tel:08050639989">080-5063-9989</a>／<a href="tel:0964321316">0964-32-1316</a>（9:00〜16:00）</td><td><a href="tel:08050659461">080-5065-9461</a>／<a href="tel:08050659219">080-5065-9219</a>／<a href="tel:08050669189">080-5066-9189</a>／<a href="tel:08050689506">080-5068-9506</a>（9:00〜16:00）</td></tr>
+        <tr><td>災害ごみ・仮置場</td><td>衛生環境課 <a href="tel:0964321598">0964-32-1598</a></td><td>市民環境課 <a href="tel:0965334114">0965-33-4114</a></td></tr>
+        <tr><td>断水・給水・宅内漏水</td><td>上下水道局 <a href="tel:0964321674">0964-32-1674</a></td><td>市役所 <a href="tel:0965334111">0965-33-4111</a>（鏡・千丁・東陽・泉町の水道は<a href="https://seikatsu.yatsushiro.jp/">八代生活環境事務組合</a>）</td></tr>
+        <tr><td>農業被害</td><td>農政課 <a href="tel:0964321641">0964-32-1641</a></td><td>市役所代表から担当課へ</td></tr>
+        <tr><td>悪質商法・契約トラブル</td><td colspan="2">消費者ホットライン <a href="tel:188">188</a>／警察相談 <a href="tel:%239110">#9110</a></td></tr>
+        <tr><td>けが・体調不良</td><td colspan="2">救急 <a href="tel:119">119</a>／迷ったら <a href="tel:%237119">#7119</a>（こどもは <a href="tel:%238000">#8000</a>）</td></tr>
+      </table></div>
+      <p class="meta">※電話番号は各出典ページ（2026-08-09確認）から。おかけ間違いにご注意ください。窓口の時間・体制は変わることがあります。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================== -->
+<section id="mikakunin">
+  <h2>まだ確認できていないこと（8月9日夜時点）</h2>
+  <div class="unconfirmed">
+    <h3>正直な情報整理のため、「未発表・未確認」の事項を明示します</h3>
+    <ul>
+      <li><b>公費解体の受付:</b> 宇城市・八代市とも今回の地震での実施・受付の発表を確認できていません（発表され次第、各市の総合ページに載るはずです）</li>
+      <li><b>宇城市の住宅応急修理（本格・最大757,000円）:</b> 受付開始の発表を確認できていません（緊急修理56,400円は受付中）</li>
+      <li><b>八代市の罹災証明の窓口受付:</b> 「8月10日（月）から」は8/7更新の市ページによる予定情報です。初日は大混雑が予想されます</li>
+      <li><b>断水の完全復旧時期:</b> 宇城市は「8月末までに市内全域」を目標と公表。八代市は試験通水が始まった段階で、全域の復旧時期は確認できていません</li>
+      <li><b>仮置場の混雑状況・受入品目の変更:</b> 日々変わる可能性があります。出発前に市ページで最新版の確認を</li>
+    </ul>
+    <p style="font-size:12.5px; color:var(--muted); margin:8px 0 0">これらは「存在しない」ことの断定ではなく、2026年8月9日夜の時点で公式発表を発見できなかったという記録です。支援金・住まい・お金の制度全般は姉妹ページ（<a href="https://toritarosan.github.io/uki-shien-dashboard/">宇城市版</a>／<a href="https://toritarosan.github.io/yatsushiro-shien-dashboard/">八代市版</a>）で追跡しています。</p>
+  </div>
+</section>
+
+<!-- ================================================== -->
+<section id="links">
+  <h2>一次情報リンク集</h2>
+  <div class="grid">
+    <div class="card c-uki">
+      <h3>宇城市</h3>
+      <ul>
+        <li><a href="https://www.city.uki.kumamoto.jp/toppage/kinkyu/2606699">令和8年熊本地震 総合ページ</a></li>
+        <li><a href="https://www.city.uki.kumamoto.jp/kurashi/bosaiinfo/sonota_bousai/2515854">罹災証明・罹災届出証明</a></li>
+        <li><a href="https://www.city.uki.kumamoto.jp/kurashi/kankyo/gomi/2607719">災害ごみ仮置き場</a></li>
+        <li><a href="https://www.city.uki.kumamoto.jp/kurashi/sumai/2613949">緊急修理（ブルーシート設置等）</a></li>
+        <li><a href="https://www.city.uki.kumamoto.jp/kurashi/sumai/jogesuido/2606682">断水・給水のお知らせ</a></li>
+        <li><a href="https://www.shakyou-uki.jp/oshirase/12239/">宇城市社協 災害ボランティアセンター</a></li>
+      </ul>
+    </div>
+    <div class="card c-yatsu">
+      <h3>八代市</h3>
+      <ul>
+        <li><a href="https://www.city.yatsushiro.lg.jp/kiji00326750/index.html">令和8年熊本地震 関連情報（リンク集）</a></li>
+        <li><a href="https://www.city.yatsushiro.lg.jp/kinkyu.html">緊急情報（随時更新）</a></li>
+        <li><a href="https://www.city.yatsushiro.lg.jp/kiji00326836/index.html">り災証明書の窓口申請</a></li>
+        <li><a href="https://www.city.yatsushiro.lg.jp/kiji00324627/index.html">災害廃棄物仮置場</a></li>
+        <li><a href="https://www.city.yatsushiro.lg.jp/kiji00326822/index.html">災害ボランティアセンター</a></li>
+        <li><a href="https://www.city.yatsushiro.lg.jp/kiji00326773/index.html">給水所情報（日ごとに更新）</a></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>国・全国機関（一般的な手引き）</h3>
+      <ul>
+        <li><a href="https://www.gov-online.go.jp/article/202003/entry-9034.html">政府広報オンライン: 住まいが被害を受けたとき最初にすること</a></li>
+        <li><a href="https://policies.env.go.jp/recycle/disaster_waste/archive/r06_shinsai/efforts/pdf/r06_shinsai_info_240221_02.pdf">環境省: 公費解体・撤去マニュアル (PDF)</a></li>
+        <li><a href="https://www.env.go.jp/air/asbestos/saigaiji_manual.html">環境省: 災害時の石綿飛散防止マニュアル</a></li>
+        <li><a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000122530.html">厚労省: 被災地での健康を守るために</a></li>
+        <li><a href="https://www.saigaivc.com/volunteers/preparation/">全社協: 災害ボランティアの準備</a></li>
+        <li><a href="https://www.kokusen.go.jp/soudan_now/data/disaster.html">国民生活センター: 災害に便乗した悪質商法</a></li>
+        <li><a href="https://www.sonpo.or.jp/soudan/uketsuke.html">日本損害保険協会: 相談受付窓口</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p><b>このマニュアルについて:</b> 令和8年熊本地震で被災した宇城市・八代市の住家の片づけについて、両市・熊本県・国・支援団体の公式発表を横断調査し、原則として「本文まで確認できた情報」のみを掲載しています。本文まで確認できなかった項目は「未確認」と明示しています。</p>
+  <p>窓口・仮置場・給水の情報は日々変わります（各項目に時点を明記）。行動の前に必ず出典リンク先の最新情報を確認してください。</p>
+  <p><b>作成: 小金井市 永鳥太郎</b> ／ 作成日: 2026-08-09 ／ 最終裏取り: 2026-08-09 夜 JST（宇城市・八代市の公式ページ、宇城市社協、環境省・厚労省・国民生活センター等の本文を確認。8/7の激甚災害・特定非常災害の指定政令は首相官邸の閣議案件ページで政令名を確認） ／ 出典は各項目に記載</p>
+  <p>本ページは生成AIを用いて公開情報を収集・整理した<b>非公式のまとめ</b>です。宇城市・八代市および関係機関の公式発表ではありません。誤り・古い情報が含まれる可能性があるため、<b>行動の前に必ず公式の一次情報をご確認ください</b>。</p>
+  <p>生活支援情報の全体版: <a href="https://toritarosan.github.io/uki-shien-dashboard/">宇城市 災害支援情報ダッシュボード</a> ／ <a href="https://toritarosan.github.io/yatsushiro-shien-dashboard/">八代市 災害支援情報ダッシュボード</a></p>
+</footer>
+</div>
+</body>
+</html>
